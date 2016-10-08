@@ -178,11 +178,12 @@ function addDataToMapUCL(data, mapa) {
     	dataLayer1.addTo(dataLayer);
 			  $('#cargando').delay(500).fadeOut('slow');
 }
+var url="request.php?lng="+lng+"&lat="+lat;
 
-var url="http://isocrone.labmod.org/foot/?lng="+lng+"&lat="+lat+"&intervals[]=10&intervals[]=20&intervals[]=30";
+//var url="http://isocrone.labmod.org/foot/?lng="+lng+"&lat="+lat+"&intervals[]=10&intervals[]=20&intervals[]=30";
 $.getJSON(url, function(data) { addDataToMapUCL(data, mapa); });
 //console.log($.getJSON(url, function(data) { addDataToMapUCL(data, mapa); }));
-
+//console.log(url);
 </script>
 
 	</body>
