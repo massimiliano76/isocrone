@@ -45,6 +45,11 @@ $lat=$_GET["lat"];
 		top:10px;
 		left:50px;
 		}
+		#logopin{
+		position:fixed;
+		top:62px;
+		right:8px;
+		}
 		#botonera {
 			position:fixed;
 			top:10px;
@@ -121,6 +126,9 @@ $lat=$_GET["lat"];
 </div>
 <div id="logo" style="leaflet-popup-content-wrapper">
 <img src="legend.png" width="120px" title="legenda" alt="legenda">
+</div>
+<div id="logopin" style="leaflet-popup-content-wrapper">
+<a href="https://www.piersoft.it/isocrone/"><img src="logopin.png" width="40px" title="legenda" alt="legenda"></a>
 </div>
 <script>
 var lat="<?php echo $lat; ?>";

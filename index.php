@@ -13,11 +13,25 @@ $r=$_GET['r'];
 <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
 <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=no">
-<meta property="og:image" content="http://www.piersoft.it/isocrone/bus_.png"/>
-
+<meta property="og:image" content="http://www.piersoft.it/isocrone/logopin.png"/>
+<style>
+#cargando {
+  font-family: Arial, sans-serif;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:#666;
+  color:#fff;
+  font-size:2em;
+  padding:20% 40%;
+  z-index:10;
+}
+</style>
 </head>
 <body onload="getLocation()">
-
+	<div id="cargando">Localizing...</div>
 
 <!--
   This example requires jQuery to load the file with AJAX.
